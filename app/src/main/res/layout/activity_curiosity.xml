@@ -13,11 +13,257 @@
         android:background="#193743">
 
 
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_curiosity"/>
 
-    
+
+        <TextView
+            android:id="@+id/tv_term_and_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/termAndPolicy"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/lay_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_above="@id/tv_term_and_policy"
+            android:layout_marginBottom="40dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_email"
+                    android:background="#68747D"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="match_parent"
+                    android:background="#6F7D88"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:text="@string/signUp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="left"
+                        android:text="@string/email"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_email"
+                    android:background="#68747D"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="match_parent"
+                    android:background="#6F7D88"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="left"
+                        android:textSize="18sp"
+                        android:text="@string/signIn"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:layout_gravity="left"
+                        android:text="@string/email"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lay_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@id/lay_email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#38689F">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/twitter"
+                android:background="#386295"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:text="@string/signInWith"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/twitter"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_google"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@id/lay_twitter"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#2D538B">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/google"
+                android:background="#294A83"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:text="Sign In With"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Google"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/lay_google"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#2F4B6E">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/facebook"
+                android:background="#2A4468"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:text="Sign In With"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Facebook"/>
+
+        </LinearLayout>
     </RelativeLayout>
-
-
-
-
 </>

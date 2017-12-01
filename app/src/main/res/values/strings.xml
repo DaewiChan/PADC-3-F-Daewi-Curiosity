@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CuriositySystem</string>
+    <string name="termAndPolicy">Term and Conditions and Privacy Policy</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signIn">Sign In</string>
+    <string name="email">with Email</string>
+    <string name="signInWith">Sign In With</string>
+    <string name="twitter">Twitter</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
 </resources>
